@@ -1,5 +1,5 @@
 from enum import Enum
-from datetime import date
+from Artwork import Artwork
 
 # Enum for ExhibitionType
 class ExhibitionType(Enum):
@@ -14,6 +14,7 @@ class Exhibition:
         self.__end_date = end_date
         self.__location = location  #instance for location
         self.__exhibition_type = ExhibitionType(exhibition_type)
+        self.__artworks = []
 
 
     # Methods to get and set name of the exhibition
