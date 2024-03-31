@@ -63,19 +63,19 @@ class Artwork:
     def update_item_details(self, updated_details):
         for key, value in updated_details.items():
             if key == "artist":
-                self.__set_artist(value)
+                self.set_artist(value)
             elif key == "style":
-                self.__set_style(value)
+                self.set_style(value)
             elif key == "item_id":
-                self.__set_item_id(value)
+                self.set_item_id(value)
             elif key == "title":
-                self.__set_title(value)
+                self.set_title(value)
             elif key == "date_of_creation":
-                self.__set_date_of_creation(value)
+                self.set_date_of_creation(value)
             elif key == "historical_significance":
-                self.__set_historical_significance(value)
+                self.set_historical_significance(value)
             elif key == "current_location":
-                self.__set_current_location(value)
+                self.set_current_location(value)
 
 
     def display_information(self):
